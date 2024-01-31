@@ -1,0 +1,46 @@
+.OperationButtonWrap {
+  // padding: 0 16px 0 0;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  .catl-btn {
+    padding: 2px 8px;
+    height: unset;
+    &:hover {
+      color: #0064ff !important;
+      background: #cce4ff !important;
+    }
+    &:disabled{
+      &:hover {
+        color: #BFBFBF !important;
+        background: transparent !important;
+      }
+    }
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .ellipsisOutlined{
+    padding: 2px 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0064ff
+  }
+}
+
+.operation-dropdown {
+  &/deep/ {
+    .catl-dropdown-menu {
+      .catl-dropdown-menu-item {
+        color: #666666;
+        &:hover {
+          background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+        }
+      }
+      .catl-dropdown-menu-item-disabled {
+        color: #bfbfbf;
+      }
+    }
+  }
+}

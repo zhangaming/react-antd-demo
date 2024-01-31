@@ -1,0 +1,65 @@
+.form-poc {
+  padding: 32px 12px 0 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+
+  &/deep/ {
+    .catl-timeline-item-content {
+      margin-inline-start: 20px;
+    }
+
+    .catl-tag {
+      margin-inline-end: 0px;
+    }
+
+    .catl-timeline .catl-timeline-item-last>.catl-timeline-item-content {
+      min-height: 0px;
+    }
+
+    .catl-tag-success{
+      background: rgba(33,194,116, 0.1);
+      color: #21C274
+    }
+
+    .catl-tag-default {
+      background: rgba(191, 191, 191, 0.1);
+      color: #999999
+    }
+
+    .catl-tag-processing {
+      background: rgba(0, 100, 255, 0.1);
+      color: #0064FF
+    }
+  }
+}
+
+.form-poc-img {
+  margin-bottom: -16px;
+
+  img {
+    width: 100%;
+    overflow: 'hidden'
+  }
+}
+
+.time-line-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .time-line-title {
+    flex: 1;
+    font-size: 14px;
+
+    &:hover {
+      color: #0064ff;
+      cursor: pointer;
+    }
+  }
+
+  .time-line-tag {
+    overflow: hidden;
+
+  }
+}
